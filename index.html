@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Books & Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>BOOKS & MOVIES</h1>
+  </header>
+
+  <nav>
+    <button onclick="showSection('books')">Ajouter un Livre</button>
+    <button onclick="showSection('movies')">Ajouter un Film</button>
+  </nav>
+
+  <section id="books" class="section active">
+    <form>
+      <h2>Ajouter un Livre</h2>
+      <label>Titre</label>
+      <input type="text" required>
+      <label>Auteur</label>
+      <input type="text" required>
+      <label>Éditeur</label>
+      <input type="text">
+      <label>Catégorie</label>
+      <input type="text">
+      <label>Note (1-5)</label>
+      <select>
+        <option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option>
+      </select>
+      <label>Commentaires</label>
+      <textarea></textarea>
+      <label>Notation détaillée</label>
+      <label>Scénario</label>
+      <select><option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option></select>
+      <label>Personnages</label>
+      <select><option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option></select>
+      <label>Qualité d’écriture</label>
+      <select><option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option></select>
+
+      <button type="submit" class="submit">Enregistrer</button>
+    </form>
+  </section>
+
+  <section id="movies" class="section">
+    <form>
+      <h2>Ajouter un Film</h2>
+      <label>Titre</label>
+      <input type="text" required>
+      <label>Acteurs</label>
+      <input type="text">
+      <label>Réalisateur</label>
+      <input type="text">
+      <label>Catégorie</label>
+      <input type="text">
+      <label>Note (1-5)</label>
+      <select>
+        <option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option>
+      </select>
+      <label>Commentaires</label>
+      <textarea></textarea>
+      <label>Notation détaillée</label>
+      <label>Scénario</label>
+      <select><option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option></select>
+      <label>Personnages</label>
+      <select><option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option></select>
+      <label>Qualité du son</label>
+      <select><option>1⭐</option><option>2⭐</option><option>3⭐</option><option>4⭐</option><option>5⭐</option></select>
+
+      <button type="submit" class="submit">Enregistrer</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
