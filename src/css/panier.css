@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #cdffd872;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #012807;
+    transition: color 0.3s ease;
+}
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-cart input {
+    width: 280px;
+    height: 30px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: rgb(102, 0, 255);
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+.panier-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.panier-details {
+    width: 65%;
+}
+
+.panier-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panier-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.panier-item h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.panier-item .prix {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.panier-item .quantite {
+    display: flex;
+    gap: 10px;
+}
+
+.panier-item .quantite input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+
+.panier-summary {
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.total {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-checkout {
+    background-color: #009688;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-checkout:hover {
+    background-color: #00796b;
+}
